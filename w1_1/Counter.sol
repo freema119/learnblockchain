@@ -15,4 +15,8 @@ contract Counter{
     function count() public {
         counter = counter + 1;
     }
+    // 新增一个add函数
+    function add(uint x) public {
+        counter = counter + x;
+    }
 }
