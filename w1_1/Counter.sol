@@ -19,4 +19,7 @@ contract Counter{
     function add(uint x) public {
         counter = counter + x;
     }
+    function count2() public{
+        counter = counter + 2;
+    }
 }
