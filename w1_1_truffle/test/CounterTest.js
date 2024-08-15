@@ -1,3 +1,6 @@
+// 特别注意这里当时踩了一个坑，测试代码编译之后一直报错看代码又没发现什么；
+// 后面问题原因是合约代码有修改，所以我们在运行truffle test之前先编译代码 truffle compile
+
 // 引入合约
 const Counter = artifacts.require("Counter");
 // 构建测试用例
