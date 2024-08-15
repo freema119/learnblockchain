@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: SEE LICENSE IN LICENSE
-pragma solidity 0.8.21;
+pragma solidity ^0.8.0;
 
 contract Counter {
-    uint public count;
+    uint public counter;
     constructor(uint x) {
-        count = x;
+        counter = x;
     }
     function add(uint i) public{
-        count = count + i;
+        counter = counter + i;
     }
 }
