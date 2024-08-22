@@ -6,8 +6,12 @@ contract Receive{
 
     }
     receive() external payable { 
-        count += msg.value;
+        // count += msg.value;
     }
+    // 如果只有fallback没有receive会报警告，没有receive会执行fallback，有的话就不会执行
+    fallback() external payable {
+        count += msg.value;
+     }
     function getBalance() public view returns (uint256){
         return address(this).balance;
     }
